@@ -1,0 +1,6 @@
+my max int = 2147483647
+
+actual max int is 2147483647
+my min int = -2147483648
+
+actual min int is -2147483648
