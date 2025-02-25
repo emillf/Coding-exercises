@@ -4,6 +4,9 @@ public class Machep{
 	public float epvalfloat{ get; private set; }
 	public double epvalaprxdouble{ get; private set; }
 	public float epvalaprxfloat{ get; private set; }
+	public double tiny{ get; private set; }
+	public double a{ get; private set; }
+	public double b{ get; private set; }
 	public Machep()
 	{
 		double x=1;
@@ -20,7 +23,10 @@ public class Machep{
 		y*=2F;
 		epvaldouble = x;
         	epvalfloat = y;
-        	epvalaprxdouble = Math.Pow(2,-53);
+        	epvalaprxdouble = Math.Pow(2,-52);
         	epvalaprxfloat = (float)Math.Pow(2,-23);
+		tiny = Math.Pow(2,-52)/2;
+		a=1+tiny+tiny;
+		b=tiny+tiny+1;
 	}
 }

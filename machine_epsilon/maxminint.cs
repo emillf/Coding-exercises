@@ -16,6 +16,10 @@ static int Main() {
 	Console.WriteLine($"Machine epsilon for a double is {machep.epvaldouble}");
 	Console.WriteLine($"Machine epsilon should be for a float {machep.epvalaprxfloat}");
 	Console.WriteLine($"Machine epsilon should be for a double {machep.epvalaprxdouble}");
+	Console.WriteLine($"Machine epsilon should be for a double {machep.epvalaprxdouble}");
+	Console.WriteLine($"machep.a==machep.b ? {machep.a==machep.b}\n");
+	Console.WriteLine($"machep.a>1  ? {machep.a>1}\n");
+	Console.WriteLine($"machep.b>1  ? {machep.b>1}\n");
 	return 0;
 	}
 }
