@@ -1,6 +1,10 @@
 using System;
+using MathLibrary;
 class minmaxint {
 static int Main() {
+	double d1 = 0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1;
+	double d2 = 8*0.1;
+	bool result = MathUtils.Approx(d1,d2);
 	Machep machep = new Machep();
 	int maxintreal=int.MaxValue;
 	int minintreal=int.MinValue;
@@ -20,6 +24,8 @@ static int Main() {
 	Console.WriteLine($"machep.a==machep.b ? {machep.a==machep.b}\n");
 	Console.WriteLine($"machep.a>1  ? {machep.a>1}\n");
 	Console.WriteLine($"machep.b>1  ? {machep.b>1}\n");
+	Console.WriteLine($"If no approximation is used d1==d2 ? {d1==d2}\n");
+	Console.WriteLine($"If approximation is used d1==d2 ? {result}\n");
 	return 0;
 	}
 }

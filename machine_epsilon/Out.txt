@@ -15,3 +15,7 @@ machep.a>1  ? False
 
 machep.b>1  ? True
 
+If no approximation is used d1==d2 ? False
+
+If approximation is used d1==d2 ? True
+
