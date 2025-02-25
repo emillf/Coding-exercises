@@ -4,3 +4,7 @@ actual max int is 2147483647
 my min int = -2147483648
 
 actual min int is -2147483648
+Machine epsilon for a float is 1.192093E-07
+Machine epsilon for a double is 2.22044604925031E-16
+Machine epsilon should be for a float 1.192093E-07
+Machine epsilon should be for a double 1.11022302462516E-16
